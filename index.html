@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مترجم صوصو</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>مترجم صوصو</h1>
+            <p>بوابتك للترجمة السهلة للنصوص والصور</p>
+        </header>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'imageTab')" id="defaultOpen">📷 ترجمة الصور</button>
+            <button class="tablinks" onclick="openTab(event, 'textTab')">✍️ ترجمة النصوص</button>
+        </div>
+
+        <div id="imageTab" class="tabcontent">
+            <div class="upload-section">
+                <label for="imageUpload">رفع صورة:</label>
+                <input type="file" id="imageUpload" accept="image/*">
+            </div>
+            <div class="language-selection">
+                <label for="sourceLang">لغة المصدر:</label>
+                <select id="sourceLang">
+                    <option value="ar">العربية</option>
+                    <option value="en">الإنجليزية</option>
+                    <option value="fr">الفرنسية</option>
+                    <option value="es">الإسبانية</option>
+                    <option value="de">الألمانية</option>
+                    <option value="ku">الكردية</option>
+                    <option value="zh">الصينية</option>
+                    <option value="ja">اليابانية</option>
+                    <option value="ru">الروسية</option>
+                    <option value="tr">التركية</option>
+                    <option value="hi">الهندية</option>
+                    <option value="it">الإيطالية</option>
+                </select>
+                <label for="targetLang">لغة الترجمة:</label>
+                <select id="targetLang">
+                    <option value="ar">العربية</option>
+                    <option value="en">الإنجليزية</option>
+                    <option value="fr">الفرنسية</option>
+                    <option value="es">الإسبانية</option>
+                    <option value="de">الألمانية</option>
+                    <option value="ku">الكردية</option>
+                    <option value="zh">الصينية</option>
+                    <option value="ja">اليابانية</option>
+                    <option value="ru">الروسية</option>
+                    <option value="tr">التركية</option>
+                    <option value="hi">الهندية</option>
+                    <option value="it">الإيطالية</option>
+                </select>
+            </div>
+            <button id="processBtn" class="btn">معالجة الصورة</button>
+            <div class="result-section">
+                <h3>النص المكتشف:</h3>
+                <p id="detectedText"></p>
+                <h3>النص المترجم:</h3>
+                <p id="translatedText"></p>
+            </div>
+        </div>
+
+        <div id="textTab" class="tabcontent">
+            <div class="language-selection">
+                <label for="sourceLangText">لغة المصدر:</label>
+                <select id="sourceLangText">
+                    <option value="ar">العربية</option>
+                    <option value="en">الإنجليزية</option>
+                    <option value="fr">الفرنسية</option>
+                    <option value="es">الإسبانية</option>
+                    <option value="de">الألمانية</option>
+                    <option value="ku">الكردية</option>
+                    <option value="zh">الصينية</option>
+                    <option value="ja">اليابانية</option>
+                    <option value="ru">الروسية</option>
+                    <option value="tr">التركية</option>
+                    <option value="hi">الهندية</option>
+                    <option value="it">الإيطالية</option>
+                </select>
+                <label for="targetLangText">لغة الترجمة:</label>
+                <select id="targetLangText">
+                    <option value="ar">العربية</option>
+                    <option value="en">الإنجليزية</option>
+                    <option value="fr">الفرنسية</option>
+                    <option value="es">الإسبانية</option>
+                    <option value="de">الألمانية</option>
+                    <option value="ku">الكردية</option>
+                    <option value="zh">الصينية</option>
+                    <option value="ja">اليابانية</option>
+                    <option value="ru">الروسية</option>
+                    <option value="tr">التركية</option>
+                    <option value="hi">الهندية</option>
+                    <option value="it">الإيطالية</option>
+                </select>
+            </div>
+            <textarea id="inputText" placeholder="أدخل النص للترجمة"></textarea>
+            <button id="translateTextBtn" class="btn">ترجمة النص</button>
+            <div class="result-section">
+                <h3>النص المترجم:</h3>
+                <p id="translatedTextResult"></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 بواسطة مترجم صوصو. جميع الحقوق محفوظة.</p>
+            <p>تم التطوير بواسطة <a href="https://t.me/caser7" target="_blank">telegram: @caser7</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

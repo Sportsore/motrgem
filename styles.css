@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f0f9ff, #cbebff, #a6d8ff);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    max-width: 600px;
+}
+
+header {
+    text-align: center;
+    background: #007bff;
+    color: white;
+    padding: 20px 10px;
+    border-bottom: 5px solid #0056b3;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+/* Tabs */
+.tab {
+    display: flex;
+    justify-content: space-around;
+    background: #007bff;
+}
+
+.tab button {
+    flex: 1;
+    background: #0056b3;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+}
+
+.tab button:hover, .tab button.active {
+    background: #004494;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+}
+
+/* Form Elements */
+.upload-section, .language-selection, .result-section {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 2px solid #007bff;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Results */
+.result-section h3 {
+    margin: 10px 0;
+    color: #007bff;
+}
+
+.result-section p {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #007bff;
+    color: white;
+    padding: 10px 5px;
+    font-size: 12px;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
